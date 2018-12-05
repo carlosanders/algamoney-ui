@@ -1,7 +1,9 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
 
+// import terceiros
 import { InputTextModule } from 'primeng/components/inputtext/inputtext';
 import { ButtonModule } from 'primeng/components/button/button';
 import { DataTableModule } from 'primeng/components/datatable/datatable';
@@ -10,9 +12,11 @@ import { InputTextareaModule } from 'primeng/components/inputtextarea/inputtexta
 import { CalendarModule } from 'primeng/components/calendar/calendar';
 import { SelectButtonModule } from 'primeng/components/selectbutton/selectbutton';
 import { DropdownModule } from 'primeng/components/dropdown/dropdown';
+import {InputMaskModule} from 'primeng/components/inputmask/inputmask';
 
-import {CurrencyMaskModule} from 'ng2-currency-mask';
+import { CurrencyMaskModule } from 'ng2-currency-mask';
 
+// meus imports
 import { AppComponent } from './app.component';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -32,6 +36,7 @@ import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.compo
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     InputTextModule,
     ButtonModule,
     DataTableModule,
@@ -40,6 +45,7 @@ import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.compo
     CalendarModule,
     SelectButtonModule,
     DropdownModule,
+    InputMaskModule,
     CurrencyMaskModule
   ],
   providers: [],
