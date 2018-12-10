@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-pessoas-grid',
   templateUrl: './pessoas-grid.component.html',
   styleUrls: ['./pessoas-grid.component.css']
 })
-export class PessoasGridComponent implements OnInit {
+export class PessoasGridComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  @Input() pessoas = [];
 
 }
