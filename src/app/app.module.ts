@@ -4,22 +4,22 @@ import {FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 // meus imports
+import { CoreModule } from './core/core.module';
 import { LancamentosModule } from './lancamentos/lancamentos.module';
 import { PessoasModule } from './pessoas/pessoas.module';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
 
+    CoreModule,
     LancamentosModule,
     PessoasModule
   ],
