@@ -1,6 +1,8 @@
-# AlgamoneyUi
+# Curso de Angular - AlgamoneyUi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
+
+link dos código do curs: https://github.com/algaworks/curso-angular-rest-spring-boot-ui
 
 ## Development server
 
