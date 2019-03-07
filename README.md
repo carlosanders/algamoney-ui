@@ -90,6 +90,9 @@ npm install ng2-currency-mask --save
 npm install ng2-currency-mask@4.1.0 --save
 npm install -g json-server
 
+# http://momentjs.com/
+npm install moment --save
+
 # versao especifica
 npm install primeng@4.1.0-rc.2 --save
 npm install lodash@4.17.4
