@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 
 // terceiros
 import {ToastyModule} from 'ng2-toasty';
+import { ConfirmDialogModule } from 'primeng/components/confirmdialog/confirmdialog';
+import { ConfirmationService } from 'primeng/components/common/api';
 
 // meus imports
 import { CoreModule } from './core/core.module';
@@ -25,13 +27,19 @@ import { HttpModule } from '@angular/http';
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
+
     ToastyModule.forRoot(),
+    ConfirmDialogModule,
 
     CoreModule,
     LancamentosModule,
     PessoasModule
   ],
-  providers: [LancamentoService, PessoaService],
+  providers: [
+    LancamentoService,
+    PessoaService,
+    ConfirmationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
