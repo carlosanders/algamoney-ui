@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
 
+// terceiros
+import {ToastyModule} from 'ng2-toasty';
+
 // meus imports
 import { CoreModule } from './core/core.module';
 import { LancamentosModule } from './lancamentos/lancamentos.module';
@@ -22,6 +25,7 @@ import { HttpModule } from '@angular/http';
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
+    ToastyModule.forRoot(),
 
     CoreModule,
     LancamentosModule,
